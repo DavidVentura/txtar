@@ -1,11 +1,12 @@
 [tool.poetry]
 name = "txtar"
-version = "0.1.0"
-description = "Port of golang's [txtar](https://pkg.go.dev/golang.org/x/tools/txtar)"
+version = "0.1.1"
+description = "Port of golang's txtar, a trivial tar-like format for unit tests"
 authors = ["david <davidventura27@gmail.com>"]
 homepage = "https://github.com/davidventura/txtar"
 repository = "https://github.com/davidventura/txtar"
 documentation = "https://github.com/davidventura/txtar"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
