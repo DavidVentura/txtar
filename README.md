@@ -9,7 +9,6 @@
 - Unpack `txtar` archives into the file system.
 
 
-
 ## Usage
 
 ### In unit tests
@@ -71,3 +70,9 @@ archive.unpack_in(Path("/path/to/unpack"))
 
  * Install dependencies: `poetry install`
  * Run tests with `pytest`.
+
+## Releasing
+
+```
+poetry publish --build --username __token__ --password $PYPI_PASSWORD
+```
