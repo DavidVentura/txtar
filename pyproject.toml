@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "txtar"
+version = "0.1.0"
+description = """
+Port of golang's [txtar](https://pkg.go.dev/golang.org/x/tools/txtar), which states:
+
+The goals for the format are:
+
+ * be trivial enough to create and edit by hand.
+ * be able to store trees of text files describing go command test cases.
+ * diff nicely in git history and code reviews.
+
+Non-goals include being a completely general archive format, storing binary data, storing file modes, storing special files like symbolic links, and so on.
+
+"""
+authors = ["david <davidventura27@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyfakefs = "^5.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+mypy = ">0.990"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
